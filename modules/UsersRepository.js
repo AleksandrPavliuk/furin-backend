@@ -23,6 +23,9 @@ module.exports = class UsersRepository {
     dataObj[0].count = dataObj[0].count + 1
     var resultAtString = JSON.stringify(dataObj)
     fs.writeFileSync(paths.STORAGE, resultAtString)
+    fs.writeFile(paths.STORAGE, resultAtString, 'utf-8', (err) => {
+      console.log('Your file has been written 😁')
+    })
 
     return dataObj[0].count
   }
