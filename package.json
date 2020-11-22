@@ -1,0 +1,14 @@
+{
+  "name": "furin",
+  "version": "1.0.0",
+  "description": "Web server that counts their visitors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aleksandr Pavliuk",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
